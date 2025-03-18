@@ -47,22 +47,19 @@
 
         MTH2310-->MTH2320
         CS1180-->CS1181
-        CS1181-->CS3100
-        CEG3310-->CS3100
-        DISCRETE-->CS3100
-        CS3100-->CS3180
+        CS1181 & CEG3310 & DISCRETE-->CS3100
+        CS3100-.->CS3180
         DISCRETE-->CS2210
-        CS3100-->CS3200
+        CS3100-.->CS3200
         subgraph Logic
             CS2210---|OR|CS3200
         end
         CS1180-->CEG2350
         CS1181-->CEG3310
-        CS3100-->CEG4110
-        CS3100-->CEG4350
-        CEG2350-->CEG4350
-        CEG3310-->CEG4350
-        CS3100-->CEG4980
+        CS3100-.->CEG4110
+        CS3100-.->CEG4350
+        CEG2350 & CEG3310-->CEG4350
+        CS3100-.->CEG4980
         2ENG[2nd Semester English class]-->CEG4980
         CEG4980-->CEG4981
         MTH2300-->MTH2530
@@ -85,17 +82,14 @@
         end
         CS1180-->CS3160
         CEG2350-->CS3170
-        MTH2300-->CS3250
-        CS1180-->CS3250
-        Statistics-->CS3250
+        MTH2300 & CS1180 & Statistics-->CS3250
         CS1180-->CS3260
         MTH2350["Differential Equations & Linear Algebra"]-->CS3260
         MTH2310-->MTH2350
         CS1180-->CS3700
         CS2800["CS 2800 - Web Development I (3)"]-->CS3800
         CS1180-->CS3810
-        CS1180-->CS3840
-        DISCRETE-->CS3840
+        CS1180 & DISCRETE-->CS3840
         subgraph "CS 4000 Electives"
             CS4070["CS 4070 OR CS 4270 - Optimization Techniques (3)"]
             CS4130["CS 4130 - High Performance Computing & Parallel Programming (3)"]
@@ -115,27 +109,24 @@
         end
         MTH2530["MTH 2530 - Elementary Linear Algebra (4)"]-->CS4070
         MTH2320-->CS4070
-        CS1180-->CS4130
-        MTH2300-->CS4130
-        MTH2530-->CS4130
-        CS3100-->CS4200
+        CS1180 & MTH2300 & MTH2530-->CS4130
+        CS3100-.->CS4200
         MTH2530-->CS4200
         MTH2530-->CS4240
-        MTH2310-->CS4280
-        CS1180-->CS4280
+        MTH2310 & CS1180-->CS4280
         MTH2530-->CS4290
         CEG4350-->CS4370
-        CS3100-->CS4370
-        CS3100-->CS4700
-        CS3100-->CS4710
+        CS3100-.->CS4370
+        CS3100-.->CS4700
+        CS3100-.->CS4710
         CS3800-->CS4800
-        CS3100-->CS4800
+        CS3100-.->CS4800
         CS3810-->CS4810
-        CS3100-->CS4810
-        CS3100-->CS4830
+        CS3100-.->CS4810
+        CS3100-.->CS4830
         Statistics-->CS4830
         Statistics-->CS4840
-        CS3100-->CS4850
+        CS3100-.->CS4850
         Statistics-->CS4850
         subgraph "CEG 3000 Electives"
             CEG3110["CEG 3110 - Introduction to Software Testing (3)"]
@@ -179,14 +170,16 @@
         CEG2350-->CEG4420
         CEG3400-->CEG4422
         CEG4350-->CEG4424
-        CS3100-->CEG4430
-        CS3100-->CEG4440
+        CS3100-.->CEG4430
+        CS3100-.->CEG4440
         CEG4400-->CEG4450
-        CS3100-->CEG4500
+        CS3100-.->CEG4500
         MTH2530-->CEG4500
         CEG4500-->CEG4510
         CEG4500-->CEG4520
-        CS3100-->CEG4750
+        CS3100-.->CEG4750
         Statistics-->CEG4750
-    </pre>
+        
+        MTH2350 ~~~ CEG3110
+        </pre>
 </body>
