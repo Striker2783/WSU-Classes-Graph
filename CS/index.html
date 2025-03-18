@@ -42,6 +42,7 @@
         MTH2320["MTH 2320 - Calculus III (4)"]
         ISE2211["ISE 2211 - Statistics for Engineers"]
 
+        MTH2310-->MTH2320
         CS1180-->CS1181
         CS1181-->CS3100
         CEG3310-->CS3100
@@ -85,8 +86,8 @@
         CS1180-->CS3250
         Statistics-->CS3250
         CS1180-->CS3260
-        DiffEq["Differential Equations & Linear Algebra"]-->CS3260
-        MTH2310-->DiffEq
+        MTH2350["Differential Equations & Linear Algebra"]-->CS3260
+        MTH2310-->MTH2350
         CS1180-->CS3700
         CS2800["CS 2800 - Web Development I (3)"]-->CS3800
         CS1180-->CS3810
@@ -133,5 +134,56 @@
         Statistics-->CS4840
         CS3100-->CS4850
         Statistics-->CS4850
+        subgraph "CEG 3000 Electives"
+            CEG3110["CEG 3110 - Introduction to Software Testing (3)"]
+            CEG3120["CEG 3120 - Introduction to the Design of Information Technology Systems (3)"]
+            CEG3400["CEG 3400 - Introduction to Cyber Security (3)"]
+            CEG3410["CEG 3410 - Introduction to Digital Forensics (3)"]
+            CEG3500["CEG 3500 - Introduction to Augmented & Virtual Reality (3)"]
+        end
+        CS1180-->CEG3110
+        CEG2350-->CEG3120
+        CEG2350-->CEG3400
+        CEG2400["CEG 2400 - Introduction to PC Networking (3)"]-->CEG3410
+        CS1180-->CEG2400
+        CS1181-->CEG3500
+        subgraph "CEG 4000 Electives"
+            CEG4120["CEG 4120 - Managing the Software Development Process (3)"]
+            CEG4130["CEG 4130 - Personal Software Development Process (3)"]
+            CEG4180["CEG 4180 - Object-Oriented Programming and Design (3)"]
+            CEG4230["CEG 4230 & Lab - Introduction to Robotics (4)"]
+            CEG4360["CEG 4360 - Distributed Systems and Cloud Computing (3)"]
+            CEG4400["CEG 4400 & Lab- Computer Networks and Security (4)"]
+            CEG4410["CEG 4410 - Mobile Computing (3)"]
+            CEG4420["CEG 4420 - Host Computer Security (3)"]
+            CEG4422["CEG 4422 - Secure Computing Practices (3)"]
+            CEG4424["CEG 4424 - Security Attacks and Defenses (3)"]
+            CEG4430["CEG 4430 - Cyber Network Security (3)"]
+            CEG4440["CEG 4440 - Android Internals and Security (3)"]
+            CEG4450["CEG 4450 - Sensor Networks and Systems (3)"]
+            CEG4500["CEG 4500 - Computer Graphics (3)"]
+            CEG4510["CEG 4510 - 3-D Modeling and Computer Animation (3)"]
+            CEG4520["CEG 4520 - Scientific Visualization and Virtual Environment (3)"]
+            CEG4750["CEG 4750 - Information Security (3)"]
+        end
+        CEG4110-->CEG4120
+        CEG4110-->CEG4130
+        CEG4110-->CEG4180
+        MTH2350-->CEG4230
+        CEG4350-->CEG4360
+        CEG3310-->CEG4400
+        CEG2350-->CEG4410
+        CEG2350-->CEG4420
+        CEG3400-->CEG4422
+        CEG4350-->CEG4424
+        CS3100-->CEG4430
+        CS3100-->CEG4440
+        CEG4400-->CEG4450
+        CS3100-->CEG4500
+        MTH2530-->CEG4500
+        CEG4500-->CEG4510
+        CEG4500-->CEG4520
+        CS3100-->CEG4750
+        Statistics-->CEG4750
     </pre>
 </body>
