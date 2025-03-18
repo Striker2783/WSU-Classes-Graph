@@ -19,6 +19,9 @@
         <li>
             I did not include any Computer Engineering Electives that are hardware stuff like Integrated Circuits
         </li>
+        <li>
+            Any nodes outside of the yellow boxes are required, except if they are round.
+        </li>
     </ul>
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
@@ -42,7 +45,7 @@
         STT3600["STT 3600 - Applied Statistics I"]
         MTH2300["MTH 2300 - Calculus I (4)"]
         MTH2310["MTH 2310 - Calculus II (4)"]
-        MTH2320["MTH 2320 - Calculus III (4)"]
+        MTH2320(["MTH 2320 - Calculus III (4)"])
         ISE2211["ISE 2211 - Statistics for Engineers"]
 
         MTH2310-->MTH2320
@@ -84,10 +87,10 @@
         CEG2350-->CS3170
         MTH2300 & CS1180 & Statistics-->CS3250
         CS1180-->CS3260
-        MTH2350["Differential Equations & Linear Algebra"]-->CS3260
+        MTH2350(["Differential Equations & Linear Algebra"])-->CS3260
         MTH2310-->MTH2350
         CS1180-->CS3700
-        CS2800["CS 2800 - Web Development I (3)"]-->CS3800
+        CS2800(["CS 2800 - Web Development I (3)"])-->CS3800
         CS1180-->CS3810
         CS1180 & DISCRETE-->CS3840
         subgraph "CS 4000 Electives"
@@ -138,7 +141,7 @@
         CS1180-->CEG3110
         CEG2350-->CEG3120
         CEG2350-->CEG3400
-        CEG2400["CEG 2400 - Introduction to PC Networking (3)"]-->CEG3410
+        CEG2400(["CEG 2400 - Introduction to PC Networking (3)"])-->CEG3410
         CS1180-->CEG2400
         CS1181-->CEG3500
         subgraph "CEG 4000 Electives"
